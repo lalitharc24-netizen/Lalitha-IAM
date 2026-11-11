@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalitha | IAM Technical Transformations Lead | Specialisation: IAM Projects (SailPoint IIQ)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter, Space Grotesk, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            base: '#060913',
+                            surface: '#0b1120',
+                            card: '#0f172a',
+                            subcard: '#162238',
+                            border: '#1e293b',
+                            borderHighlight: '#334155',
+                            gold: '#FFC72C',
+                            goldLight: '#FDE047',
+                            goldDeep: '#F59E0B',
+                            amber: '#f59e0b',
+                            emerald: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        tech: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Cyber Security Slate & Radiant Golden Yellow Design Tokens */
+        :root {
+            --bg-base: #060913;
+            --bg-surface: #0b1120;
+            --bg-card: rgba(15, 23, 42, 0.88);
+            --border-default: #1e293b;
+            --border-glow: rgba(255, 199, 44, 0.3);
+            --text-heading: #f8fafc;
+            --text-body: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent-gold: #FFC72C;
+            --accent-gold-light: #FDE047;
+            --accent-gold-deep: #F59E0B;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-body);
+            font-family: 'Inter', sans-serif;
+            background-image: 
+                radial-gradient(circle at 15% 10%, rgba(255, 199, 44, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 85% 60%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+                linear-gradient(to right, rgba(30, 41, 59, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(30, 41, 59, 0.25) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+        }
+
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-heading);
+        }
+
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .cyber-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-default);
+            backdrop-filter: blur(12px);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .cyber-card:hover {
+            border-color: rgba(255, 199, 44, 0.45);
+            box-shadow: 0 10px 30px -10px rgba(255, 199, 44, 0.16);
+        }
+
+        .gold-glow-btn {
+            background: linear-gradient(135deg, #FFC72C 0%, #F59E0B 100%);
+            color: #060913;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 20px -3px rgba(255, 199, 44, 0.4);
+        }
+
+        .gold-glow-btn:hover {
+            box-shadow: 0 0 28px 0 rgba(255, 199, 44, 0.65);
+            transform: translateY(-1px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060913;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFC72C;
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-amber-400/20 selection:text-amber-300 relative text-slate-300">
+
+    <!-- ================= TOP STATUS NOTIFICATION BAR ================= -->
+    <div class="border-b border-cyber-border bg-[#090e1c] px-4 py-2 text-xs font-mono">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+                </span>
+                <span class="text-slate-400">OPERATIONAL STATUS:</span>
+                <span class="text-amber-300 font-semibold">TCS Assistant Consultant &bull; Enterprise IAM Delivery Active</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <span class="hidden md:inline"><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i>Pune, India</span>
+                <span class="hidden md:inline">&bull;</span>
+                <span><i class="fa-solid fa-shield-halved text-amber-400 mr-1.5"></i>Tier-1 US & UK BFSI Programs</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= STICKY MAIN NAVBAR ================= -->
+    <header class="sticky top-0 z-40 border-b border-cyber-border bg-[#060913]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-300 via-amber-400 to-amber-500 flex items-center justify-center font-bold text-slate-950 shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-fingerprint text-xl"></i>
+                </div>
+                <div>
+                    <div class="heading-font text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                        LALITHA
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">IIQ LEAD</span>
+                    </div>
+                    <div class="text-[11px] font-mono tracking-widest text-slate-400 uppercase">
+                        IAM Technical Transformations Lead
+                    </div>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-7 text-xs font-mono font-semibold tracking-wide text-slate-300">
+                <a href="#architecture" class="hover:text-amber-400 transition">ARCHITECTURE</a>
+                <a href="#connectors" class="hover:text-amber-400 transition">CONNECTORS</a>
+                <a href="#case-studies" class="hover:text-amber-400 transition">CASE STUDIES</a>
+                <a href="#competencies" class="hover:text-amber-400 transition">TOOLING</a>
+                <a href="#trajectory" class="hover:text-amber-400 transition">PROGRESSION</a>
+            </nav>
+
+            <!-- Action Controls -->
+            <div class="hidden sm:flex items-center gap-3">
+                <button onclick="openBlueprintModal()" class="px-3.5 py-2 rounded-lg text-xs font-mono border border-amber-500/30 bg-amber-950/30 text-amber-300 hover:bg-amber-900/40 hover:border-amber-400 transition flex items-center gap-2">
+                    <i class="fa-solid fa-diagram-project text-xs"></i>
+                    <span>Blueprint</span>
+                </button>
+                <button onclick="openLinkedInModal()" class="px-3.5 py-2 rounded-lg text-xs font-mono gold-glow-btn flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-sm"></i>
+                    <span>Bio Export</span>
+                </button>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-btn" class="lg:hidden p-2 rounded-lg border border-cyber-border text-slate-300 hover:text-white" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-lg" id="mobile-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-drawer" class="hidden lg:hidden border-b border-cyber-border bg-[#0b1120] px-6 py-5 space-y-3 font-mono text-xs">
+            <a href="#architecture" class="block py-1.5 text-slate-300 hover:text-amber-400 mobile-item">ARCHITECTURE</a>
+            <a href="#connectors" class="block py-1.5 text-slate-300 hover:text-amber-400 mobile-item">CONNECTORS (WORKDAY / REST / JDBC)</a>
+            <a href="#case-studies" class="block py-1.5 text-slate-300 hover:text-amber-400 mobile-item">ENTERPRISE CASE STUDIES</a>
+            <a href="#competencies" class="block py-1.5 text-slate-300 hover:text-amber-400 mobile-item">TOOLING MATRIX</a>
+            <a href="#trajectory" class="block py-1.5 text-slate-300 hover:text-amber-400 mobile-item">CAREER PROGRESSION</a>
+            <div class="pt-3 border-t border-cyber-border flex gap-2">
+                <button onclick="openBlueprintModal()" class="w-1/2 py-2 text-center rounded border border-amber-500/30 text-amber-300">Blueprint</button>
+                <button onclick="openLinkedInModal()" class="w-1/2 py-2 text-center rounded gold-glow-btn">LinkedIn Bio</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Narrative -->
+                    <div class="lg:col-span-8 space-y-6">
+                        
+                        <!-- Badges -->
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-mono font-bold border border-amber-500/50 bg-amber-950/60 text-amber-300 shadow-sm shadow-amber-950">
+                                <i class="fa-solid fa-certificate text-amber-400"></i>
+                                Specialisation: IAM Projects (SailPoint IIQ)
+                            </span>
+                            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-semibold border border-cyber-border bg-[#0f172a] text-slate-300">
+                                <i class="fa-solid fa-building-columns text-amber-400"></i>
+                                Tier-1 US & UK Financial Services
+                            </span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="heading-font text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
+                            Identity Governance, <br/>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-yellow-200">
+                                SailPoint IdentityIQ
+                            </span> & <br/>
+                            Enterprise Delivery.
+                        </h1>
+
+                        <!-- Headline Subtitle -->
+                        <h2 class="text-sm sm:text-base font-mono uppercase tracking-wider text-amber-400 font-semibold">
+                            IAM Technical Transformations Lead | Delivery & Engineering | SailPoint IdentityIQ Implementation & Governance
+                        </h2>
+
+                        <!-- Body Lead -->
+                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+                            Driving high-trust Identity Governance & Administration (IGA) with <span class="text-white font-semibold">14 years of core IT delivery</span> and <span class="text-amber-300 font-semibold">10+ years IAM experience - SailPoint IIQ, OIM, Hitachi IAM</span>. Spearheaded multi-system migrations, Workday authoritative HR ingestion, custom WebServices/JDBC connector frameworks, and zero-defect audit compliance for premier global banks.
+                        </p>
+
+                        <!-- Key Performance Metrics Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
+                            <div class="p-4 rounded-xl border border-cyber-border bg-[#0b1120]">
+                                <div class="text-3xl font-extrabold font-mono text-amber-400">14+</div>
+                                <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mt-1">Years Core IT</div>
+                            </div>
+                            <div class="p-4 rounded-xl border border-cyber-border bg-[#0b1120]">
+                                <div class="text-3xl font-extrabold font-mono text-amber-300">10+</div>
+                                <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mt-1">Yrs IAM (IIQ/OIM/Hitachi)</div>
+                            </div>
+                            <div class="p-4 rounded-xl border border-cyber-border bg-[#0b1120]">
+                                <div class="text-3xl font-extrabold font-mono text-yellow-300">100K+</div>
+                                <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mt-1">Managed Identities</div>
+                            </div>
+                            <div class="p-4 rounded-xl border border-cyber-border bg-[#0b1120]">
+                                <div class="text-3xl font-extrabold font-mono text-emerald-400">100%</div>
+                                <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider mt-1">Audit Compliance</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Row -->
+                        <div class="flex flex-wrap items-center gap-4 pt-3">
+                            <a href="#case-studies" class="px-6 py-3.5 rounded-xl text-sm font-bold gold-glow-btn flex items-center gap-2">
+                                <span>Explore Enterprise Milestones</span>
+                                <i class="fa-solid fa-arrow-down text-xs"></i>
+                            </a>
+                            <button onclick="copyContactCoords()" class="px-5 py-3.5 rounded-xl text-sm font-semibold border border-cyber-border bg-[#0b1120] text-white hover:border-amber-400/50 hover:bg-[#111a2f] flex items-center gap-2 transition">
+                                <i class="fa-regular fa-copy text-amber-400 text-xs"></i>
+                                <span>Copy Executive Bio</span>
+                            </button>
+                        </div>
+                        <div id="hero-copy-toast" class="hidden text-xs font-mono text-amber-400 pt-1">
+                            <i class="fa-solid fa-circle-check mr-1"></i> Executive credentials and bio copied to clipboard!
+                        </div>
+
+                    </div>
+
+                    <!-- Right Specification Summary Card -->
+                    <div class="lg:col-span-4">
+                        <div class="p-6 rounded-2xl cyber-card relative space-y-4 shadow-2xl">
+                            <div class="flex items-center justify-between border-b border-cyber-border pb-4">
+                                <div class="flex items-center gap-2">
+                                    <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                                    <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                                    <span class="text-xs font-mono font-bold text-white ml-2">iiq_core_spec.yaml</span>
+                                </div>
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded border border-amber-500/40 text-amber-300 font-bold">
+                                    V8.x ARCHITECTURE
+                                </span>
+                            </div>
+
+                            <div class="space-y-3 text-xs font-mono">
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-[10px] uppercase font-bold text-slate-400">Authoritative Master Feed</div>
+                                    <div class="text-white font-bold text-sm mt-0.5 flex items-center gap-2">
+                                        <i class="fa-solid fa-id-badge text-amber-400"></i> Workday Core HRMS
+                                    </div>
+                                    <div class="text-slate-400 text-[11px] mt-1">Pre-hire ingestion, worker & contractor delta feeds</div>
+                                </div>
+
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-[10px] uppercase font-bold text-slate-400">Custom Connectors Engine</div>
+                                    <div class="text-white font-bold text-sm mt-0.5 flex items-center gap-2">
+                                        <i class="fa-solid fa-plug text-amber-400"></i> WebServices & JDBC
+                                    </div>
+                                    <div class="text-slate-400 text-[11px] mt-1">OAuth2 token handling, Stored Procedures, Partitioning</div>
+                                </div>
+
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-[10px] uppercase font-bold text-slate-400">Engineering & Rules Stack</div>
+                                    <div class="text-white font-bold text-sm mt-0.5 flex items-center gap-2">
+                                        <i class="fa-solid fa-code text-amber-400"></i> Java & BeanShell Rules
+                                    </div>
+                                    <div class="text-slate-400 text-[11px] mt-1">Correlation, Creation, BuildMap, Before/After Ops</div>
+                                </div>
+
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-[10px] uppercase font-bold text-slate-400">Governance & Audit</div>
+                                    <div class="text-white font-bold text-sm mt-0.5 flex items-center gap-2">
+                                        <i class="fa-solid fa-shield-check text-amber-400"></i> Compliance Manager (SoD)
+                                    </div>
+                                    <div class="text-slate-400 text-[11px] mt-1">SOX-404, PCI-DSS, FCA certification campaigns</div>
+                                </div>
+                            </div>
+
+                            <div class="pt-3 border-t border-cyber-border flex items-center justify-between text-xs font-mono text-slate-400">
+                                <span>Location: Pune, India</span>
+                                <span class="text-amber-400 font-bold">10+ Yrs IAM (IIQ, OIM, Hitachi)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= INTERACTIVE ARCHITECTURE BLUEPRINT ================= -->
+        <section id="architecture" class="py-20 border-y border-cyber-border bg-[#090f1e]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <span class="text-xs font-mono uppercase tracking-widest font-bold text-amber-400">Interactive Pipeline</span>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                        Enterprise Target Operating Architecture
+                    </h2>
+                    <p class="mt-2 text-sm sm:text-base text-slate-300 leading-relaxed">
+                        End-to-end integration topology connecting Workday HR intake, SailPoint IdentityIQ core lifecycle and compliance engines, and high-throughput target application endpoints.
+                    </p>
+                </div>
+
+                <!-- Architectural Flow Container -->
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                    
+                    <!-- Node 1: HR Feed -->
+                    <div class="p-6 rounded-2xl cyber-card flex flex-col justify-between border-t-2 border-t-amber-400">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">TIER 1</span>
+                                <i class="fa-solid fa-database text-amber-400 text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Authoritative Source</h3>
+                            <div class="text-xs font-semibold text-amber-400 font-mono mb-3">Workday Core HRMS</div>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span>Employee & Contingent Worker profile records</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span>RaaS API & scheduled delta aggregations</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-circle-check text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span>Future-dated hire triggers (T-7 Day pre-onboarding)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-3 border-t border-cyber-border text-[11px] font-mono text-slate-400">
+                            Aggregation Frequency: Real-Time / Delta
+                        </div>
+                    </div>
+
+                    <!-- Node 2: IIQ Core -->
+                    <div class="p-6 rounded-2xl cyber-card flex flex-col justify-between border-t-2 border-t-amber-300 lg:col-span-2">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">TIER 2 (CORE ENGINE)</span>
+                                <i class="fa-solid fa-shield-halved text-amber-400 text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">SailPoint IdentityIQ Core Governance Plane</h3>
+                            <div class="text-xs font-semibold text-amber-300 font-mono mb-3">Identity Correlation, Workflows & Policy Rules</div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-xs font-bold text-white mb-1"><i class="fa-solid fa-arrows-split-up-and-left text-amber-400 mr-1.5"></i>LCM Workflows</div>
+                                    <p class="text-[11px] text-slate-300 leading-relaxed">
+                                        Automated Joiner (Birthright), Mover (Role re-evaluation), and Leaver (immediate revocation) event processing.
+                                    </p>
+                                </div>
+                                <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                    <div class="text-xs font-bold text-white mb-1"><i class="fa-solid fa-scale-balanced text-yellow-400 mr-1.5"></i>Compliance Manager</div>
+                                    <p class="text-[11px] text-slate-300 leading-relaxed">
+                                        Preventative SoD checks in request approval pipeline; quarterly automated manager certification campaigns.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 p-3 rounded-xl border border-cyber-border bg-[#070d1a]">
+                                <div class="text-xs font-bold text-white mb-1"><i class="fa-solid fa-code text-amber-400 mr-1.5"></i>Java & BeanShell Rule Subsystem</div>
+                                <p class="text-[11px] text-slate-300">
+                                    Custom Correlation Rules (prevent duplicate accounts), Identity Creation Rules, BuildMap multi-value handlers, and Before/After Operation scripts.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-3 border-t border-cyber-border flex items-center justify-between text-[11px] font-mono text-slate-400">
+                            <span>Engine: ProvisioningPlan & Project Execution</span>
+                            <span class="text-amber-400 font-bold">High-Throughput Multi-Threading</span>
+                        </div>
+                    </div>
+
+                    <!-- Node 3: Connectors & Targets -->
+                    <div class="p-6 rounded-2xl cyber-card flex flex-col justify-between border-t-2 border-t-yellow-400">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">TIER 3</span>
+                                <i class="fa-solid fa-plug text-yellow-400 text-lg"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Connector & Target Layer</h3>
+                            <div class="text-xs font-semibold text-yellow-400 font-mono mb-3">Enterprise Endpoints</div>
+                            <ul class="space-y-2 text-xs text-slate-300">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-plug text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span><strong>WebServices (REST/SOAP):</strong> Microservices, SaaS APIs, OAuth2 tokens</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-plug text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span><strong>JDBC Database:</strong> Core Banking DBs, Stored Procedures, Delta SQL</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-plug text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span><strong>Active Directory / LDAP:</strong> Domain groups & birthright trees</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-plug text-amber-400 mt-0.5 text-[10px]"></i>
+                                    <span><strong>RACF Mainframe:</strong> Critical financial ledger accounts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-3 border-t border-cyber-border text-[11px] font-mono text-slate-400">
+                            Least Privilege Service Execution
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONNECTOR ARCHITECTURE SPOTLIGHT ================= -->
+        <section id="connectors" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-xs font-mono uppercase tracking-widest font-bold text-amber-400">Connector Deep Dive</span>
+                        <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                            Workday, WebServices & JDBC Engineering
+                        </h2>
+                    </div>
+                    <p class="text-sm text-slate-300 max-w-md mt-4 md:mt-0 leading-relaxed">
+                        Technical breakdown of custom integration scripts, authentication mechanics, and SQL delta schemas delivering sub-second reliability.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Spotlight 1: Workday -->
+                    <div class="p-6 rounded-2xl cyber-card space-y-4">
+                        <div class="flex items-center justify-between border-b border-cyber-border pb-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-id-card text-amber-400 text-lg"></i>
+                                <span class="font-bold text-white text-base">Workday HRMS Integration</span>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">AUTHORITATIVE</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Established Workday as the single corporate source of truth for full-time bank personnel and external vendor contractors.
+                        </p>
+                        
+                        <div class="space-y-2 text-xs font-mono text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>RaaS (Report-as-a-Service) ingestion with parameterized XML filtering</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>BeanShell correlation rules matching Worker ID & Corporate Email</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>Pre-hire detection triggering day-minus-seven birthright provisioning</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>Manager hierarchy recursion for multi-level approval routing</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] text-[11px] font-mono text-slate-300">
+                            <span class="text-amber-400 font-bold block mb-1">Impact Metric:</span>
+                            Onboarding cycle reduced from 4 business days to under 2 hours with 0% orphan rate.
+                        </div>
+                    </div>
+
+                    <!-- Spotlight 2: WebServices -->
+                    <div class="p-6 rounded-2xl cyber-card space-y-4">
+                        <div class="flex items-center justify-between border-b border-cyber-border pb-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-network-wired text-amber-400 text-lg"></i>
+                                <span class="font-bold text-white text-base">WebServices (REST/SOAP)</span>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">API SUITE</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Architected generic WebServices connector templates to onboard in-house banking microservices and third-party SaaS tooling.
+                        </p>
+
+                        <div class="space-y-2 text-xs font-mono text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>Before Operation Rule:</strong> Dynamic OAuth2 Bearer Token generation & renewal</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>Chained Provisioning:</strong> POST user creation &rarr; capture GUID &rarr; assign roles</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>After Operation Rule:</strong> Response parsing, nested JSON flattening into Link objects</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>Exponential backoff algorithm capturing HTTP 429 rate limit exceptions</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] text-[11px] font-mono text-slate-300">
+                            <span class="text-amber-400 font-bold block mb-1">Impact Metric:</span>
+                            Bespoke application onboarding lead time slashed from 3 weeks to 4 business days.
+                        </div>
+                    </div>
+
+                    <!-- Spotlight 3: JDBC -->
+                    <div class="p-6 rounded-2xl cyber-card space-y-4">
+                        <div class="flex items-center justify-between border-b border-cyber-border pb-3">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-database text-amber-400 text-lg"></i>
+                                <span class="font-bold text-white text-base">JDBC Database Connectors</span>
+                            </div>
+                            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">SQL LEDGERS</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Engineered high-throughput direct JDBC connectivity for transactional core banking databases and custom SQL schemas.
+                        </p>
+
+                        <div class="space-y-2 text-xs font-mono text-slate-300">
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>Partitioned Aggregation:</strong> Parallel SQL queries over indexed account IDs</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>Delta SQL Detection:</strong> Timestamp comparison indexing (`modified_date > ?`)</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span><strong>Custom BuildMap Rules:</strong> Flattens 1-to-many permission tables into Identity Link</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-amber-400 mt-0.5 text-xs"></i>
+                                <span>Stored Procedures (`SP_PROVISION_USER`) for transactional integrity and rollback</span>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] text-[11px] font-mono text-slate-300">
+                            <span class="text-amber-400 font-bold block mb-1">Impact Metric:</span>
+                            Reconciliation runtime reduced by 65%; handles 50,000+ accounts nightly without table locking.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ENTERPRISE CASE STUDIES ================= -->
+        <section id="case-studies" class="py-20 border-y border-cyber-border bg-[#090f1e]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+                    <div>
+                        <span class="text-xs font-mono uppercase tracking-widest font-bold text-amber-400">Enterprise Track Record</span>
+                        <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                            Transformation Case Studies
+                        </h2>
+                    </div>
+
+                    <!-- Filter Tabs -->
+                    <div class="flex flex-wrap items-center gap-2 mt-4 md:mt-0 p-1 rounded-xl border border-cyber-border bg-[#060913]">
+                        <button onclick="filterProjects('all')" class="project-tab active-tab px-3 py-1.5 rounded-lg text-xs font-mono font-bold gold-glow-btn" data-filter="all">
+                            All Projects (5)
+                        </button>
+                        <button onclick="filterProjects('lifecycle')" class="project-tab px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-slate-300 hover:text-white" data-filter="lifecycle">
+                            Workday & LCM
+                        </button>
+                        <button onclick="filterProjects('connectors')" class="project-tab px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-slate-300 hover:text-white" data-filter="connectors">
+                            WebServices & JDBC
+                        </button>
+                        <button onclick="filterProjects('compliance')" class="project-tab px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-slate-300 hover:text-white" data-filter="compliance">
+                            SoD & Audits
+                        </button>
+                        <button onclick="filterProjects('migration')" class="project-tab px-3 py-1.5 rounded-lg text-xs font-mono font-semibold text-slate-300 hover:text-white" data-filter="migration">
+                            Legacy Modernization
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Case Study Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+                    
+                    <!-- Case Study 1 -->
+                    <article class="project-card p-6 rounded-2xl cyber-card flex flex-col justify-between" data-category="lifecycle">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 border border-amber-500/40 text-amber-300 font-bold">1. WORKDAY AUTHORITATIVE JML</span>
+                                <span class="text-[11px] font-mono text-slate-400">85,000+ Identities</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">
+                                Workday-Driven Identity Lifecycle Automation (BFSI)
+                            </h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                                Overhauled manual onboarding across a Tier-1 financial institution by implementing Workday as the authoritative HR source, powering automated Joiner, Mover, Leaver workflows in SailPoint LCM.
+                            </p>
+                            
+                            <div class="space-y-1.5 text-xs text-slate-300 mb-4 font-mono">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Built custom Java correlation rules to eliminate duplicate identities.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Engineered immediate leaver revocation for privileged banking entitlements.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] mb-3">
+                                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold">Quantified Impact</div>
+                                <div class="text-xs font-bold text-amber-300 mt-0.5">Turnaround reduced from 4 days to &lt; 2 hrs; 0% orphan accounts.</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Workday RaaS</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">SailPoint LCM</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Active Directory</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 2 -->
+                    <article class="project-card p-6 rounded-2xl cyber-card flex flex-col justify-between" data-category="connectors">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 border border-amber-500/40 text-amber-300 font-bold">2. WEBSERVICES API ENGINE</span>
+                                <span class="text-[11px] font-mono text-slate-400">REST / SOAP</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">
+                                WebServices Connector Framework for Banking Microservices
+                            </h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                                Built standardized WebServices connectors to govern access for bespoke internal trading applications and SaaS systems lacking pre-built connectors.
+                            </p>
+                            
+                            <div class="space-y-1.5 text-xs text-slate-300 mb-4 font-mono">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Engineered OAuth2 token renewal inside Before-Operation BeanShell rules.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Handled chained multi-step provisioning and dynamic GUID capture.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] mb-3">
+                                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold">Quantified Impact</div>
+                                <div class="text-xs font-bold text-amber-300 mt-0.5">App onboarding cycle slashed from 3 weeks to 4 business days.</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">REST OAuth2</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">BeanShell Rules</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">JSON Parser</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 3 -->
+                    <article class="project-card p-6 rounded-2xl cyber-card flex flex-col justify-between" data-category="connectors">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 border border-amber-500/40 text-amber-300 font-bold">3. JDBC DIRECT SQL</span>
+                                <span class="text-[11px] font-mono text-slate-400">Core Banking DBs</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">
+                                JDBC Connector & High-Throughput Database Provisioning
+                            </h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                                Configured direct JDBC connectivity and multi-threaded aggregations across high-volume financial accounting ledgers and SQL transactional databases.
+                            </p>
+                            
+                            <div class="space-y-1.5 text-xs text-slate-300 mb-4 font-mono">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Built custom Java BuildMap rules to parse complex 1:N entitlement tables.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Integrated transactional Stored Procedures for least-privilege operations.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] mb-3">
+                                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold">Quantified Impact</div>
+                                <div class="text-xs font-bold text-amber-300 mt-0.5">Nightly reconciliation runtime reduced by 65%; zero database locks.</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">JDBC SQL</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Stored Procedures</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Partitioning</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 4 -->
+                    <article class="project-card p-6 rounded-2xl cyber-card flex flex-col justify-between" data-category="compliance">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 border border-amber-500/40 text-amber-300 font-bold">4. AUDIT & SOD ENGINE</span>
+                                <span class="text-[11px] font-mono text-slate-400">SOX & PCI-DSS</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">
+                                Segregation of Duties (SoD) & Regulatory Audit Governance
+                            </h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                                Configured proactive and detective access policies in SailPoint Compliance Manager to eliminate toxic entitlement combinations across trading, settlement, and accounting roles.
+                            </p>
+                            
+                            <div class="space-y-1.5 text-xs text-slate-300 mb-4 font-mono">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Implemented preventative SoD blocking directly inside access request forms.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Automated quarterly managerial access reviews with automatic revocations.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] mb-3">
+                                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold">Quantified Impact</div>
+                                <div class="text-xs font-bold text-amber-300 mt-0.5">Achieved 100% compliant baseline; zero recurring audit findings.</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Compliance Manager</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">SoD Matrices</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Certifications</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Case Study 5 -->
+                    <article class="project-card p-6 rounded-2xl cyber-card flex flex-col justify-between" data-category="migration">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950 border border-amber-500/40 text-amber-300 font-bold">5. LEGACY TO IIQ MIGRATION</span>
+                                <span class="text-[11px] font-mono text-slate-400">Zero-Downtime</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">
+                                Legacy IAM Sunsetting to SailPoint IdentityIQ
+                            </h3>
+                            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                                Led the successful decommission and cutover of legacy CA IDM and Hitachi ID platforms to unified SailPoint IIQ without disrupting daily banking operations.
+                            </p>
+                            
+                            <div class="space-y-1.5 text-xs text-slate-300 mb-4 font-mono">
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Mapped legacy XML schemas and complex business logic into IIQ rules.</span>
+                                </div>
+                                <div class="flex items-start gap-2">
+                                    <i class="fa-solid fa-angle-right text-amber-400 mt-1 text-[11px]"></i>
+                                    <span>Orchestrated seamless password synchronization and self-service cutover.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="p-3 rounded-xl border border-cyber-border bg-[#070d1a] mb-3">
+                                <div class="text-[10px] font-mono uppercase text-slate-400 font-bold">Quantified Impact</div>
+                                <div class="text-xs font-bold text-amber-300 mt-0.5">30% reduction in annual infrastructure maintenance overhead.</div>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">CA IDM Cutover</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">Hitachi ID</span>
+                                <span class="px-2 py-0.5 rounded border border-cyber-border">SailPoint XML</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TECHNICAL COMPETENCY MATRIX ================= -->
+        <section id="competencies" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <span class="text-xs font-mono uppercase tracking-widest font-bold text-amber-400">Technical Capability Index</span>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                        Architecture, Connectors & Delivery Stack
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="p-6 rounded-2xl cyber-card">
+                        <div class="flex items-center gap-2 mb-4 font-bold text-sm text-white">
+                            <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                            <span>Core IGA Systems</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>SailPoint IdentityIQ (IIQ)</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Oracle Identity Manager (OIM)</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Hitachi ID IAM Suite</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Lifecycle Manager (LCM)</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Compliance Manager</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl cyber-card">
+                        <div class="flex items-center gap-2 mb-4 font-bold text-sm text-white">
+                            <i class="fa-solid fa-code text-amber-400"></i>
+                            <span>Engineering & Rules</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Java Enterprise Edition</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>SailPoint BeanShell Rules</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>SailPoint XML Schemas</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>SQL Query Optimization</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>RESTful JSON & SOAP XML</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl cyber-card">
+                        <div class="flex items-center gap-2 mb-4 font-bold text-sm text-white">
+                            <i class="fa-solid fa-plug text-amber-400"></i>
+                            <span>Connectors & Targets</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Workday Direct HR Feed</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>WebServices REST/SOAP</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>JDBC Database Connector</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Active Directory & LDAP</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>Mainframe / RACF Connectors</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl cyber-card">
+                        <div class="flex items-center gap-2 mb-4 font-bold text-sm text-white">
+                            <i class="fa-solid fa-scale-balanced text-yellow-400"></i>
+                            <span>Delivery & Governance</span>
+                        </div>
+                        <ul class="space-y-2.5 text-xs font-mono text-slate-300">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>SOX-404 & PCI Compliance</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>Segregation of Duties (SoD)</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>Global Offshore Delivery</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>Role Mining & RBAC Design</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>Tier-1 BFSI Stakeholder Advisory</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 14-YEAR CAREER PROGRESSION ================= -->
+        <section id="trajectory" class="py-20 border-t border-cyber-border bg-[#090f1e]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <span class="text-xs font-mono uppercase tracking-widest font-bold text-amber-400">Career Progression</span>
+                    <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mt-1">
+                        14-Year Enterprise Delivery Leadership
+                    </h2>
+                </div>
+
+                <div class="relative border-l-2 border-cyber-border ml-4 sm:ml-8 pl-6 sm:pl-8 space-y-12">
+                    
+                    <!-- TCS Role -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-slate-900 bg-amber-400 shadow-md shadow-amber-400/50"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-white">IAM Technical Transformations Lead</h3>
+                            <span class="text-xs font-mono px-3 py-1 rounded-full border border-amber-500/40 bg-amber-950/60 text-amber-300 font-bold w-fit mt-1 sm:mt-0">
+                                June 2026 – Present
+                            </span>
+                        </div>
+                        <div class="text-sm font-semibold text-amber-400 mb-3">Tata Consultancy Services (TCS) &bull; Assistant Consultant</div>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Leading enterprise IAM delivery, architecture reviews, and SailPoint IdentityIQ transformations for Tier-1 global financial clients. Guiding engineering teams through Workday HR integration setups, automated compliance campaigns, and multi-tenant connector deployments across offshore and onshore pods.
+                        </p>
+                    </div>
+
+                    <!-- Wipro Role -->
+                    <div class="relative">
+                        <div class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full border-2 border-slate-900 bg-slate-500"></div>
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-white">Senior Consultant – IAM & Security Delivery</h3>
+                            <span class="text-xs font-mono px-3 py-1 rounded-full border border-cyber-border bg-[#0b1120] text-slate-400 font-bold w-fit mt-1 sm:mt-0">
+                                Nearly 14 Years Progression
+                            </span>
+                        </div>
+                        <div class="text-sm font-semibold text-slate-400 mb-3">Wipro Technologies &bull; Progressed from Associate to Senior Consultant</div>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Steered multi-year enterprise identity implementations, client advisory, offshore team delivery, and engineering execution across US and UK BFSI programs. Successfully orchestrated legacy platform migrations (Hitachi ID, CA IDM) into SailPoint IdentityIQ, delivered custom Java/BeanShell rules, and governed audit compliance for enterprise directories and mainframe environments.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT & ENGAGEMENT ================= -->
+        <section id="contact" class="py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 border border-amber-500/40 bg-amber-950/60 text-amber-400 text-2xl shadow-lg shadow-amber-950">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white mb-3">
+                    Connect for Strategic IAM & IIQ Transformations
+                </h2>
+                <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto mb-8 leading-relaxed">
+                    Available for enterprise identity governance leadership, technical solution advisory, and complex SailPoint IdentityIQ delivery engagements.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button onclick="copyContactCoords()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-sm font-bold gold-glow-btn flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-copy text-xs"></i>
+                        <span>Copy Profile Summary</span>
+                    </button>
+                    <button onclick="openLinkedInModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-sm font-semibold border border-cyber-border bg-[#0b1120] text-white hover:border-amber-400 hover:bg-[#111a2f] flex items-center justify-center gap-2 transition">
+                        <i class="fa-brands fa-linkedin text-amber-400 text-sm"></i>
+                        <span>LinkedIn Bio Snippet</span>
+                    </button>
+                    <button onclick="openBlueprintModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-sm font-semibold border border-cyber-border bg-[#0b1120] text-slate-300 hover:text-white hover:border-amber-400 flex items-center justify-center gap-2 transition">
+                        <i class="fa-solid fa-diagram-project text-xs text-yellow-400"></i>
+                        <span>Inspect Architecture</span>
+                    </button>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-cyber-border flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-400">
+                    <span>LOCATION: PUNE, INDIA</span>
+                    <span>&bull;</span>
+                    <span>14 YEARS CORE IT</span>
+                    <span>&bull;</span>
+                    <span>10+ YEARS IAM (SAILPOINT IIQ, OIM, HITACHI IAM)</span>
+                    <span>&bull;</span>
+                    <span class="text-amber-400 font-bold">SPECIALISATION: IAM PROJECTS (SAILPOINT IIQ)</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-8 border-t border-cyber-border bg-[#060913] text-center text-xs font-mono text-slate-400">
+        <p>&copy; 2026 Lalitha &bull; IAM Technical Transformations Lead &bull; Specialisation: IAM Projects (SailPoint IIQ)</p>
+    </footer>
+
+    <!-- ================= MODAL: LINKEDIN BIO GENERATOR ================= -->
+    <div id="modal-linkedin" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="max-w-xl w-full rounded-2xl border border-cyber-border bg-[#0b1120] p-6 shadow-2xl relative">
+            <div class="flex items-center justify-between border-b border-cyber-border pb-3 mb-4">
+                <div class="flex items-center gap-2 font-bold text-white">
+                    <i class="fa-brands fa-linkedin text-amber-400 text-lg"></i>
+                    <span>Ready-to-Use LinkedIn Profile Bio</span>
+                </div>
+                <button onclick="closeLinkedInModal()" class="text-slate-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+            <p class="text-xs text-slate-300 mb-3">
+                Formatted for LinkedIn's "About" section or executive introductions:
+            </p>
+            <textarea id="linkedin-text-box" readonly class="w-full h-52 p-3 rounded-xl border border-cyber-border bg-[#060913] text-slate-200 font-mono text-xs leading-relaxed focus:outline-none">Lalitha | IAM Technical Transformations Lead | Delivery & Engineering
+Specialisation: IAM Projects (SailPoint IIQ)
+Location: Pune, India | 14 Years Core IT | 10+ years IAM experience - SailPoint IIQ, OIM, Hitachi IAM
+
+Strategic & Hands-on Identity Governance & Administration (IGA) Leader with 14 years of core IT delivery experience, including 10+ years of enterprise IAM experience across SailPoint IIQ, Oracle Identity Manager (OIM), and Hitachi ID IAM Suite for Tier-1 US and UK financial institutions.
+
+Specialisation: IAM Projects (SailPoint IIQ) Architectural Highlights:
+• Workday Integration: Single authoritative HR source for automated Joiner, Mover, Leaver (JML) lifecycle workflows.
+• High-Throughput Connectors: Custom WebServices (REST/OAuth2, SOAP) and JDBC connectors for high-volume banking ledgers.
+• Legacy Modernization: Successfully migrated legacy IAM platforms into unified SailPoint IIQ without business interruption.
+• Continuous Compliance: Designed granular Segregation of Duties (SoD) policies and quarterly certification workflows, achieving zero audit deficiencies across SOX audits.
+• Core Competencies: Java, BeanShell Rules, XML configurations, RACF Mainframe, Active Directory, Global Offshore Delivery Leadership.</textarea>
+            
+            <div class="mt-4 flex items-center justify-end gap-3">
+                <button onclick="copyLinkedInText()" class="px-4 py-2 rounded-lg text-xs font-bold gold-glow-btn flex items-center gap-1.5">
+                    <i class="fa-regular fa-copy"></i>
+                    <span id="btn-copy-label">Copy to Clipboard</span>
+                </button>
+                <button onclick="closeLinkedInModal()" class="px-4 py-2 rounded-lg text-xs font-semibold border border-cyber-border text-slate-400 hover:text-white">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= MODAL: ARCHITECTURE BLUEPRINT ================= -->
+    <div id="modal-blueprint" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="max-w-3xl w-full rounded-2xl border border-cyber-border bg-[#0b1120] p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-cyber-border pb-3 mb-4">
+                <div class="flex items-center gap-2 font-bold text-white">
+                    <i class="fa-solid fa-diagram-project text-amber-400 text-lg"></i>
+                    <span>SailPoint IdentityIQ Architecture Blueprint</span>
+                </div>
+                <button onclick="closeBlueprintModal()" class="text-slate-400 hover:text-white p-1">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="space-y-4 text-xs font-mono">
+                <div class="p-4 rounded-xl border border-cyber-border bg-[#060913]">
+                    <div class="text-[11px] font-bold uppercase mb-2 text-amber-400">1. Authoritative Ingestion Pipeline</div>
+                    <div class="text-slate-300 leading-relaxed">
+                        [Workday HRMS Feed] 
+                        &rarr; (RaaS API / Scheduled Delta Aggregation) 
+                        &rarr; [IdentityIQ Identity Cubes] 
+                        &rarr; (Custom BeanShell Correlation & Creation Rules)
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-xl border border-cyber-border bg-[#060913]">
+                    <div class="text-[11px] font-bold uppercase mb-2 text-amber-400">2. Target Provisioning & Connector Layer</div>
+                    <div class="text-slate-300 leading-relaxed space-y-1">
+                        <div>&bull; <strong>WebServices Connector:</strong> REST APIs with dynamic OAuth2 Bearer Tokens, Custom Before/After Operation Rules, rate limit handling.</div>
+                        <div>&bull; <strong>JDBC Connector:</strong> Partitioned Delta SQL Aggregation & Stored Procedures for Core Banking transactional tables.</div>
+                        <div>&bull; <strong>Active Directory:</strong> Direct birthright account creation & security group sync.</div>
+                        <div>&bull; <strong>Mainframe:</strong> RACF Entitlement synchronization.</div>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-xl border border-cyber-border bg-[#060913]">
+                    <div class="text-[11px] font-bold uppercase mb-2 text-yellow-400">3. Governance & Segregation of Duties (SoD) Plane</div>
+                    <div class="text-slate-300 leading-relaxed space-y-1">
+                        <div>&bull; Preventative SoD checks embedded in LCM access request submission workflows.</div>
+                        <div>&bull; Automated quarterly managerial access certifications with automatic entitlement revocations.</div>
+                        <div>&bull; Audit trail logging compliant with SOX-404, PCI-DSS, and FCA regulations.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-end">
+                <button onclick="closeBlueprintModal()" class="px-5 py-2 rounded-lg text-xs font-bold gold-glow-btn">
+                    Acknowledge & Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT CONTROLLERS ================= -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileBtn = document.getElementById('mobile-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const mobileIcon = document.getElementById('mobile-icon');
+        const mobileItems = document.querySelectorAll('.mobile-item');
+
+        mobileBtn.addEventListener('click', () => {
+            const isHidden = mobileDrawer.classList.toggle('hidden');
+            if (isHidden) {
+                mobileIcon.classList.remove('fa-xmark');
+                mobileIcon.classList.add('fa-bars');
+            } else {
+                mobileIcon.classList.remove('fa-bars');
+                mobileIcon.classList.add('fa-xmark');
+            }
+        });
+
+        mobileItems.forEach(item => {
+            item.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+                mobileIcon.classList.remove('fa-xmark');
+                mobileIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Project Filter Logic
+        function filterProjects(category) {
+            document.querySelectorAll('.project-tab').forEach(tab => {
+                if (tab.getAttribute('data-filter') === category) {
+                    tab.classList.add('gold-glow-btn', 'font-bold');
+                    tab.classList.remove('text-slate-300');
+                } else {
+                    tab.classList.remove('gold-glow-btn', 'font-bold');
+                    tab.classList.add('text-slate-300');
+                }
+            });
+
+            document.querySelectorAll('.project-card').forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Copy Profile / Coordinates Helper
+        function copyContactCoords() {
+            const textToCopy = "Lalitha | IAM Technical Transformations Lead | Delivery & Engineering\nSpecialisation: IAM Projects (SailPoint IIQ)\n14 Years Core IT | 10+ years IAM experience - SailPoint IIQ, OIM, Hitachi IAM\nPune, India | Tier-1 Global BFSI (US & UK)\nWorkday Integration • WebServices & JDBC Connectors • SoD Governance";
+            
+            const textarea = document.createElement("textarea");
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+
+            const toast = document.getElementById("hero-copy-toast");
+            toast.classList.remove("hidden");
+            setTimeout(() => {
+                toast.classList.add("hidden");
+            }, 3500);
+        }
+
+        // LinkedIn Modal Controls
+        function openLinkedInModal() {
+            document.getElementById('modal-linkedin').classList.remove('hidden');
+        }
+        function closeLinkedInModal() {
+            document.getElementById('modal-linkedin').classList.add('hidden');
+        }
+        function copyLinkedInText() {
+            const textBox = document.getElementById("linkedin-text-box");
+            textBox.select();
+            document.execCommand("copy");
+
+            const label = document.getElementById("btn-copy-label");
+            label.innerText = "Copied!";
+            setTimeout(() => {
+                label.innerText = "Copy to Clipboard";
+            }, 2500);
+        }
+
+        // Architecture Blueprint Modal Controls
+        function openBlueprintModal() {
+            document.getElementById('modal-blueprint').classList.remove('hidden');
+        }
+        function closeBlueprintModal() {
+            document.getElementById('modal-blueprint').classList.add('hidden');
+        }
+
+        // Close on Esc key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLinkedInModal();
+                closeBlueprintModal();
+            }
+        });
+    </script>
+</body>
+</html>
